@@ -101,6 +101,4 @@ client.connect((err) => {
 
 ////get user order details
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || port);
